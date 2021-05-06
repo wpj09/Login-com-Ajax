@@ -12,9 +12,10 @@ class UserTableSeeder extends Seeder
     public function run()
     {
         \Illuminate\Support\Facades\DB::table('users')->insert([
-            'name' => 'Willian Pereira de Jesus',
-            'email' => 'wpjwpj09@gmail.com',
+            'name' => 'Usuario',
+            'email' => 'teste@laravel.com',
             'password' => bcrypt('admin')
+
         ]);
     }
 }
