@@ -13,4 +13,4 @@ const mix = require('laravel-mix');
 
 mix.scripts(['resources/js/assets/jquery.min.js'], 'public/js/assets/jquery.js').version();
 mix.scripts(['resources/js/assets/login.js'], 'public/js/assets/login.js').version();
-mix.scripts(['resources/css/login.css'], 'public/css/assets/login.css')
+mix.scripts(['resources/css/login.css'], 'public/css/assets/login.css').version();
