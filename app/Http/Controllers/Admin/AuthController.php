@@ -11,8 +11,9 @@ class AuthController extends Controller
 {
     public function index()
     {
-        $users = User::all();
-        return view('admin.pessoa')->with('users', $users);
+//        $users = User::all();
+//        return view('admin.pessoa')->with('users', $users);
+        return view('admin.listing');
     }
     public function showLoginForm()
     {
@@ -41,7 +42,7 @@ class AuthController extends Controller
             return response()->json($json);
         }
 
-        $json['redirect'] = route('admin.home');
+        $json['redirect'] = route('admin.listing');
         return response()->json($json);
     }
 }

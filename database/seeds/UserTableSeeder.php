@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use \Illuminate\Support\Str;
 
 class UserTableSeeder extends Seeder
 {
@@ -12,10 +13,28 @@ class UserTableSeeder extends Seeder
     public function run()
     {
         \Illuminate\Support\Facades\DB::table('users')->insert([
-            'name' => 'Usuario',
-            'email' => 'teste@laravel.com',
-            'password' => bcrypt('admin')
-
+            'name' => 'Willian',
+            'email' => 'wpjwpj09@gmail.com',
+            'password' => bcrypt('admin'),
+            'remember_token' => Str::random(100)
+        ]);
+        \Illuminate\Support\Facades\DB::table('users')->insert([
+            'name' => 'Michael',
+            'email' => 'michaalvesreino@gmail.com',
+            'password' => bcrypt('admin'),
+            'remember_token' => Str::random(100)
+        ]);
+        \Illuminate\Support\Facades\DB::table('users')->insert([
+            'name' => 'Rodrigo',
+            'email' => 'rodrigollrdglucas@gmail.com',
+            'password' => bcrypt('admin'),
+            'remember_token' => Str::random(100)
+        ]);
+        \Illuminate\Support\Facades\DB::table('users')->insert([
+            'name' => 'Pedro',
+            'email' => 'pedrohenriquegd2016@gmail.com',
+            'password' => bcrypt('admin'),
+            'remember_token' => Str::random(100)
         ]);
     }
 }

@@ -24,7 +24,7 @@
                 <p>
                     <label for="email">Seu email</label>
                     <input id="email" name="email" type="email"
-                           placeholder="ex. growthcode@hotmail.com" value="wpjwpj09@gmail.com">
+                           placeholder="ex. growthcode@hotmail.com">
                 </p>
 
                 <p>
